@@ -1,7 +1,8 @@
 function App() {
   return (
     <div className="bg-[#0f172a] text-white min-h-screen font-sans">
-      {/* Navbar - Responsive: Nakatago o simple sa mobile */}
+      
+      {/* Navigation */}
       <nav className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center py-6 px-8 text-sm text-gray-400 gap-4">
         <span className="text-white font-bold text-lg">Mary Grace Gallito</span>
         <div className="flex gap-6">
@@ -12,29 +13,27 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section - Responsive: Stacked sa mobile, side-by-side sa desktop */}
+      {/* Hero */}
       <section className="max-w-6xl mx-auto py-12 px-8 flex flex-col-reverse md:flex-row justify-between items-center gap-10 text-center md:text-left">
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl md:text-6xl font-bold mb-4">Hello<span className="text-orange-300">.</span></h1>
           <p className="text-3xl md:text-5xl text-gray-500 mb-2">I'm Mary Grace</p>
-          
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button className="bg-orange-500 px-8 py-3 rounded hover:bg-orange-600 transition">Got a project?</button>
             <button className="border border-gray-600 px-8 py-3 rounded hover:border-orange-500 transition">My resume</button>
           </div>
         </div>
-        
         <div className="w-64 h-64 md:w-80 md:h-80 border-2 border-orange-500 rounded-full flex items-center justify-center overflow-hidden shrink-0">
           <img src="/formalpic.jpg" alt="MaryGrace Gallito" className="object-cover w-full h-full" />
         </div>
       </section>
 
-      {/* Skills - Responsive: Nag-aadjust ang spacing */}
+      {/* Skills */}
       <div className="max-w-6xl mx-auto px-8 grid grid-cols-2 md:grid-cols-5 gap-6 text-gray-500 border-b border-gray-800 pb-10 mb-20 text-center">
         {["C#", "Java", "JavaScript", "Android Studio", "React"].map(skill => <span key={skill}>{skill}</span>)}
       </div>
 
-      {/* About Section - Responsive: 1 column sa mobile, 2 sa desktop */}
+      {/* Expertise */}
       <section className="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
         <div className="space-y-6 text-gray-400">
           <h2 className="text-2xl font-bold text-white">Expertise</h2>
@@ -43,7 +42,7 @@ function App() {
           <p>• Computer Vision AI Integration</p>
         </div>
         <div>
-          <h2 className="text-3xl font-bold mb-6">About me</h2>
+          <h2 className="text-3xl font-bold mb-6">About</h2>
           <p className="text-gray-400 mb-8">
             I am a passionate IT student from STI College. I focus on building smart solutions, 
             like my current capstone project involving AI Visualizers for the beauty industry.
@@ -55,28 +54,25 @@ function App() {
         </div>
       </section>
 
-      {/* Works Section - Responsive: 1 column (mobile) -> 2 (tablet) -> 3 (desktop) */}
+      {/* Projects */}
       <section className="max-w-6xl mx-auto px-8 pb-20">
-        <h2 className="text-4xl font-bold mb-12 text-center md:text-left">My Works</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center md:text-left">Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
           <div className="bg-gray-800 p-6 rounded-lg hover:border border-orange-500 transition">
             <h3 className="font-bold text-lg mb-2">Salon Management System</h3>
             <p className="text-sm text-gray-400">Capstone project with AI Computer Vision visualizer for hairstyle recommendations.</p>
           </div>
-
           <div className="bg-gray-800 p-6 rounded-lg hover:border border-orange-500 transition">
             <h3 className="font-bold text-lg mb-2">Guessing Game App</h3>
             <p className="text-sm text-gray-400">Mobile application logic built with Android Studio and Java/XML.</p>
           </div>
-
           <div className="bg-gray-800 p-6 rounded-lg hover:border border-orange-500 transition">
             <h3 className="font-bold text-lg mb-2">Boba Branding Design</h3>
             <p className="text-sm text-gray-400">Creative design concepts for "Lovesick Boba" using K-pop inspired themes.</p>
           </div>
-
         </div>
       </section>
+      
     </div>
   );
 }
