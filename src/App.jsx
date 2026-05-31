@@ -24,7 +24,7 @@ function App() {
           </div>
         </div>
         <div className="w-64 h-64 md:w-80 md:h-80 border-2 border-orange-500 rounded-full flex items-center justify-center overflow-hidden shrink-0">
-          <img src="/formalpic.jpg" alt="MaryGrace Gallito" className="object-cover w-full h-full" />
+          <img src="formalpic.jpg" alt="MaryGrace Gallito" className="object-cover w-full h-full" />
         </div>
       </section>
 
